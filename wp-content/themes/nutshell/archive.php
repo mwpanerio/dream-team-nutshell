@@ -26,6 +26,8 @@
     </section>
 <?php else: ?>
     Sorry, we couldn't find any posts.
+
+    Test sample #4
 <?php endif; ?>
 
 
