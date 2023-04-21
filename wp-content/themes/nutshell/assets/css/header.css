@@ -279,6 +279,18 @@ body.menu-is-active:after {
  */
 
 .masthead {
+    padding: 30px 0;
+}
+
+.masthead__maintitle {
+    font-size: 80px;
+}
+
+.masthead__description p {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
 }
 
 

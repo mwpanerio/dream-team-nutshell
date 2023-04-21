@@ -77,6 +77,67 @@ fx_register_block(
     ]
 );
 
+fx_register_block(
+    [
+        'name'          => 'tabs-top-menu',
+        'title'         => 'Tabs - Top Menu',
+        'template'      => 'general/tabs-top-menu.php',
+        'description'   => '',
+        'css'           => 'general/tabs-top-menu.css',
+        'js'            => 'general/tabs-top-menu.js',
+        'js_deps'       => [ 'jquery' ],
+        'post_types'    => [],
+    ]
+);
+
+fx_register_block(
+    [
+        'name'          => 'limitless-banner-cta',
+        'title'         => 'CTA - Floating/Boxed Banner',
+        'template'      => 'general/limitless-banner-cta.php',
+        'description'   => '',
+        'css'           => 'general/limitless-banner-cta.css',
+        'post_types'    => [],
+    ]
+);
+
+fx_register_block(
+    [
+        'name'          => 'price-calculator',
+        'title'         => 'Price Calculator',
+        'template'      => 'general/price-calculator.php',
+        'description'   => '',
+        'css'           => 'general/price-calculator.css',
+        'css_deps'      => ['fx_jquery_ui'],
+        'js'            => 'general/price-calculator.js',
+        'js_deps'       => ['fx_jquery_ui'],
+        'post_types'    => [],
+    ]
+);
+
+fx_register_block(
+    [
+        'name'          => 'table-compare',
+        'title'         => 'Table Compare',
+        'template'      => 'general/table-compare.php',
+        'description'   => '',
+        'css'           => 'general/table-compare.css',
+        'post_types'    => [],
+    ]
+);
+
+fx_register_block(
+    [
+        'name'          => 'accordion',
+        'title'         => 'Accordion',
+        'template'      => 'general/accordion.php',
+        'description'   => '',
+        'css'           => 'general/accordion.css',
+        'js'            => 'general/accordion.js',
+        'post_types'    => [],
+    ]
+);
+
 
 /**
  * To avoid issues with CF7 assets, we're creating our own CF7 block. You shouldn't need to touch this section.

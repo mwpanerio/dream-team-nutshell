@@ -15,22 +15,36 @@
  */
 
  :root {
-    --section-margins: 60px; /* TODO: Update margins to match prototypes - This variable is used for margin/padding utility classes in global.css: https://webpagefx.mangoapps.com/msc/NjAyNDg1Xzg2MzE4NTg
-    /* --- Other Examples ---
-    --border-color: #e3e3e3;
-    --border: 1px solid var(--border-color);
-    --drop-shadow: 0px 1px 30px rgb(0 0 0 / 9%);
-    */
+    --section-margins: 60px;
+    
+    --font-primary: Doyle, Georgia, sans-serif;
+    --font-secondary: 'IBM Plex Sans',sans-serif;
+
+    --color-blue: #0C0F33;
+    --color-purple: #524FB8;
+    --color-light-blue: #3B9ED7;
+    --color-lighter-blue: #d9edf7;
+    --color-green: #33C252;
+    --color-yellow: #FAC942;
+    --color-orange: #FE5800;
+    --color-pink: #FF2E47;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-dark-gray: #333;
+    --color-gray: #efebeb;
+    --color-border: #ccc;
+    --color-border-2: #ececec;
+    --color-border-3: #e5e3e1;
 }
 
 @media (min-width: 768px) {
     :root {
-        --section-margins: 80px; /* TODO: Update margins to match prototypes. */
+        --section-margins: 60px; /* TODO: Update margins to match prototypes. */
     }
 }
 
 @media (min-width: 1025px) {
     :root {
-        --section-margins: 100px; /* TODO: Update margins to match prototypes. */
+        --section-margins: 60px; /* TODO: Update margins to match prototypes. */
     }
 }

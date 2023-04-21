@@ -1,0 +1,127 @@
+.tab-top-menu {
+    background-color: var(--color-lighter-blue);
+}
+
+.tab-top-menu__upper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-top-menu__upper button {
+    min-width: 50%;
+    flex: 1;
+    border: 0;
+    padding: 12px 20px;
+    display: block;
+    background-color: transparent;
+    color: #98a6b4;
+    font-family: var(--font-secondary);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    box-shadow: inset 0 0 var(--color-orange);
+    transition: color 0.3s ease-in-out,
+                background-color 0.3s ease-in-out,
+                box-shadow 0.3s ease-in-out;
+}
+
+.tab-top-menu__upper button:not(.is-active):hover {
+    box-shadow: inset 0 -4px var(--color-orange);
+}
+
+.tab-top-menu__upper button.is-active {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.tab-top-menu__lower {
+    background-color: var(--color-white);
+    padding: 30px;
+}
+
+.tab-top-menu__content img {
+    width: 192px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.tab-top-menu__content .line-separator {
+    margin: 10px 0;
+}
+
+.tab-top-menu__content h3 {
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.tab-top-menu__content h3 span {
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.tab-top-menu__content {
+    margin: 0 -22px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .tab-top-menu__content {
+        display: flex;
+    }
+}
+
+.tab-top-menu__content__item {
+    flex: 1;
+    padding: 20px 22px;
+    position: relative;
+}
+
+@media (min-width: 1025px) {
+    .tab-top-menu__content__item {
+        box-shadow: 0 0 0 0 transparent;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .tab-top-menu__content__item:hover {
+        box-shadow: 1px 1px 8px 0 rgba(71, 82, 93, 0.2);
+    }
+}
+
+.tab-top-menu__popular {
+    position: absolute;
+    right: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 175px;
+    padding: 8px 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 700;
+    right: 22px;
+    top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .tab-top-menu__popular {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

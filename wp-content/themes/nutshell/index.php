@@ -19,7 +19,7 @@
 <?php endif; ?>
 
 <?php if( have_posts() ): ?>
-    <section class="blog-listing-container js-load-more-block section-margins">
+    <!-- <section class="blog-listing-container js-load-more-block section-margins">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -39,7 +39,7 @@
                 </div>             
             </div>
         </div>
-    </section>
+    </section> -->
 <?php endif; ?>
 
 

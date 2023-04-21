@@ -1,0 +1,199 @@
+{
+    "key": "group_638d75c1b3138",
+    "title": "[Block] General - Half Text Half Testimonials Slider",
+    "fields": [
+        {
+            "key": "field_638d75c2852b6",
+            "label": "The Content",
+            "name": "the_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_638d7606852b7",
+            "label": "Testimonial Options",
+            "name": "testimonial_options",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "custom-select": "Custom Select",
+                "featured-testimonials": "Featured Testimonials"
+            },
+            "default_value": "featured-testimonials",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_638de0d56a419",
+            "label": "Featured Testimonials",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_638d7606852b7",
+                        "operator": "==",
+                        "value": "featured-testimonials"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "This will fetch only the featured testimonial posts.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_638de1236a41a",
+            "label": "Testimonial Count",
+            "name": "testimonial_count",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Place how many testimony you would like to take place on slider.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_638d7606852b7",
+                        "operator": "==",
+                        "value": "featured-testimonials"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_638de16d65c58",
+            "label": "Select Testimonials",
+            "name": "select_testimonials",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_638d7606852b7",
+                        "operator": "==",
+                        "value": "custom-select"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "testimonial"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": ""
+        },
+        {
+            "key": "field_638dd894852b8",
+            "label": "Background Color",
+            "name": "background_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#d9edf7",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_638dd9e7734dc",
+            "label": "Swap Position",
+            "name": "swap_position",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left-content": "Left Content",
+                "right-content": "Right Content"
+            },
+            "default_value": "left-content",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/general-half-text-half-testimonial-slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1670243396
+}

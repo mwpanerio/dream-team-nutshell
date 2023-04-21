@@ -1,0 +1,199 @@
+.table-compare__row {
+    margin-top: 50px
+}
+
+.table-compare__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.table-compare__item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.table-compare__row__upper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.table-compare__row__upper__item:first-child {
+    width: 50%;
+}
+
+.table-compare__row__upper__item:nth-child(2),
+.table-compare__row__upper__item:nth-child(3) {
+    width: 25%; 
+}
+
+.table-compare__row__upper__item img:not(.table-compare__logo) {
+    height: 28px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.table-compare__item__row__item img:not(.table-compare__logo) {
+    width: 24px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .table-compare__item__row__item img:not(.table-compare__logo) {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.table-compare__item__row__item p {
+    font-size: 16px;
+    line-height: 19px;
+    white-space: normal;
+    padding: 20px 0;
+}
+
+.table-compare__item__row__item p > span {
+    display: inline;
+}
+
+.table-compare__item__row__item p > span img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.table-compare__item__row__item .tooltip {
+    position: relative;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .table-compare__item__row__item .tooltip {
+        margin-left: 20px;
+        width: 18px;
+        display: inline;
+    }
+}
+
+.table-compare__item__row__item .tooltip img {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .table-compare__item__row__item .tooltip img {
+        display: inline-block;
+        width: 20px;
+    }
+}
+
+.table-compare__item__row__item .tooltip__content {
+    width: 220px;
+    display: block;
+    position: absolute;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 12px;
+    padding: 10px 10px;
+    border-radius: 0;
+    right: -225px;
+    top: 50%;
+    border-radius: 8px;
+    transform: translateY(-50%) translateX(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .table-compare__item__row__item .tooltip__content {
+        position: relative;
+        opacity: 1;
+        right: 0;
+        width: 100%;
+        transform: none;
+        top: 0;
+        background-color: transparent;
+        color: var(--color-black);
+        padding: 0;
+        margin-top: 10px;
+        font-style: italic;
+    }
+}
+
+@media (min-width: 768px) {
+    .table-compare__item__row__item .tooltip__content:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -8px;
+        border-top: 8px solid transparent;
+        border-right: 8px solid var(--color-blue);
+        border-bottom: 8px solid transparent;
+        border-left: 0;
+    }
+}
+
+.table-compare__item__row__item .tooltip:hover .tooltip__content {
+    pointer-events: initial;
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+}
+
+.table-compare__item__heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.table-compare__item__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.table-compare__item__row__item {
+    border-bottom: 1px solid var(--color-border-3);
+}
+
+.table-compare__item__row__item:first-child,
+.table-compare__item__row__item:nth-child(2) {
+    width: 100%;
+    border-bottom: 0;
+}
+
+.table-compare__item__row__item:nth-child(2),
+.table-compare__item__row__item:nth-child(3) {
+    width: 100%;
+    padding: 0 0 20px;
+}
+
+@media (min-width: 768px) {
+    .table-compare__item__row__item:first-child {
+        width: 50%;
+        border-bottom: 1px solid var(--color-border-3);
+    }
+    
+    .table-compare__item__row__item:nth-child(2),
+    .table-compare__item__row__item:nth-child(3) {
+        width: 25%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid var(--color-border-3);
+    }
+}
+
+.table-compare__logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: auto;
+    margin: 0 20px 0 0;
+}

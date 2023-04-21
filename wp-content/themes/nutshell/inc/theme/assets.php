@@ -233,6 +233,13 @@ function fx_theme_styles() {
             'src'       => $theme_url . '/assets/css/plugins/choices.css',
         ]
     );
+
+    fx_assets_add_stylesheet(
+        [
+            'handle'    => 'fx_jquery_ui',
+            'src'       => $theme_url . '/assets/css/plugins/jquery-ui.min.css',
+        ]
+    );
     
     // TODO: remove if not using ninja tables.
     fx_assets_add_stylesheet(
@@ -375,6 +382,14 @@ function fx_theme_scripts() {
             'handle'        => 'fx_slick',
             'src'           => $theme_url . '/assets/js/plugins/slick.js',
             'dependencies'  => [ 'jquery', 'fx_choices' ],
+        ]
+    );
+
+    fx_assets_add_script(
+        [
+            'handle'        => 'fx_jquery_ui',
+            'src'           => $theme_url . '/assets/js/plugins/jquery-ui.min.js',
+            'dependencies'  => [ 'jquery'],
         ]
     );
     

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Doyle';
+    src: url('Doyle-Bold.eot');
+    src: url('Doyle-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Doyle-Bold.woff2') format('woff2'),
+        url('Doyle-Bold.woff') format('woff'),
+        url('Doyle-Bold.ttf') format('truetype'),
+        url('Doyle-Bold.svg#Doyle-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doyle';
+    src: url('DoyleLight-Regular.eot');
+    src: url('DoyleLight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DoyleLight-Regular.woff2') format('woff2'),
+        url('DoyleLight-Regular.woff') format('woff'),
+        url('DoyleLight-Regular.ttf') format('truetype'),
+        url('DoyleLight-Regular.svg#DoyleLight-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doyle';
+    src: url('Doyle-BoldItalic.eot');
+    src: url('Doyle-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Doyle-BoldItalic.woff2') format('woff2'),
+        url('Doyle-BoldItalic.woff') format('woff'),
+        url('Doyle-BoldItalic.ttf') format('truetype'),
+        url('Doyle-BoldItalic.svg#Doyle-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doyle';
+    src: url('DoyleMedium-Italic.eot');
+    src: url('DoyleMedium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('DoyleMedium-Italic.woff2') format('woff2'),
+        url('DoyleMedium-Italic.woff') format('woff'),
+        url('DoyleMedium-Italic.ttf') format('truetype'),
+        url('DoyleMedium-Italic.svg#DoyleMedium-Italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doyle';
+    src: url('DoyleMedium-Regular.eot');
+    src: url('DoyleMedium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DoyleMedium-Regular.woff2') format('woff2'),
+        url('DoyleMedium-Regular.woff') format('woff'),
+        url('DoyleMedium-Regular.ttf') format('truetype'),
+        url('DoyleMedium-Regular.svg#DoyleMedium-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doyle';
+    src: url('DoyleLight-Italic.eot');
+    src: url('DoyleLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('DoyleLight-Italic.woff2') format('woff2'),
+        url('DoyleLight-Italic.woff') format('woff'),
+        url('DoyleLight-Italic.ttf') format('truetype'),
+        url('DoyleLight-Italic.svg#DoyleLight-Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doyle';
+    src: url('Doyle-Italic.eot');
+    src: url('Doyle-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Doyle-Italic.woff2') format('woff2'),
+        url('Doyle-Italic.woff') format('woff'),
+        url('Doyle-Italic.ttf') format('truetype'),
+        url('Doyle-Italic.svg#Doyle-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doyle';
+    src: url('Doyle-Regular.eot');
+    src: url('Doyle-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Doyle-Regular.woff2') format('woff2'),
+        url('Doyle-Regular.woff') format('woff'),
+        url('Doyle-Regular.ttf') format('truetype'),
+        url('Doyle-Regular.svg#Doyle-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
