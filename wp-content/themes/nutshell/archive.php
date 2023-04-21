@@ -25,7 +25,9 @@
         </div>
     </section>
 <?php else: ?>
-    Sorry, we couldn't find any posts.
+    Sorry, we couldn't find any posts. 
+
+    Test message
 <?php endif; ?>
 
 
